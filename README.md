@@ -8,10 +8,17 @@
 > Optional: `upload_files.ipynb` $\rightarrow$ Used to upload the trained model to an external API so that it can be useful later.
 
 
-## Results
+## ResNet 50 Results
 
 | Model | Dataset Leakage ($\lambda_D$) | Model Leakage ($\lambda_M$) | Bias Amplification ($\Delta$) |
 | :--- | :---: | :---: | :---: |
 | **Baseline** | 68.18% | 73.78% | 5.60% |
 | **adv@conv4** | 68.09% | 67.58% | -0.52% |
 | **adv@conv5** | 68.21% | 65.35% | -2.86% |
+
+## VGG 16 Results
+| Model | Dataset Leakage ($\lambda_D$) | Model Leakage ($\lambda_M$) | Bias Amplification ($\Delta$) |
+| :--- | :---: | :---: | :---: |
+| **Baseline** | 68.24% | 71.22% | 2.99% |
+| **adv@conv4** | 68.24% | 64.14% | -4.09% |
+| **adv@conv5** | 68.24% | 64.10% | -4.14% |
